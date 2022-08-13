@@ -64,7 +64,7 @@ img {
 
 
 body{
-    background:url('/backg.png');
+    background:url('./images/backg.png');
     background-repeat: 0;
     background-size: cover;
     color: white;
