@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* This is taken from Andy Bell css reset
+https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
+The video I got this reset info
+https://youtu.be/h3bTwCqX4ns?t=821
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding : 0;
+  font: inherit;  
+  }
+  
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Reset ends here */
+
+/* *{
+  outline: 1px solid red;
+} */
+
+:root{
+    --bg-color:#07253b;
+    --default-margin:5%;
+}
+
+
+
+body{
+    background:url('/backg.png');
+    background-repeat: 0;
+    background-size: cover;
+    color: white;
+    font-family: Montserrat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3% var(--default-margin);
+}
+
+.logo{
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content:end ;
+    border-bottom: 2.5px solid white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 4rem;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    align-self: center;
+
+}
+
+li{
+    display: block;
+    cursor: pointer;
+
+}
+
+.contact-info{
+  align-self: start;
+    margin-left: 4rem;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-info h3{
+  width: 19ch;
+  text-align: right;
+  cursor: pointer;
+}
+
+
+.contact-info svg{
+  width:30px;
+  height: 50px;
+  grid-row: span 2;
+  transform: translate(2rem);
+}
+
+main{
+  margin: var(--default-margin);
+  position: relative;
+}
+
+.learn-more{
+  font-size: 1.5rem;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  padding: .7rem 1rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  transition-duration:  400ms;
+  transition-property: background-color,color;
+  transition-timing-function: ease-in-out;
+}
+
+.learn-more:hover{
+  background-color: #fefefe;
+  color:#0b1b2e;
+}
+
+h1{
+  padding-top: 5rem;
+  font-size: 4rem;
+  font-family: monospace;
+  width: 20ch;
+  font-weight: 500;
+}
+
+.card{
+  width: 250px;
+  height: 195px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: hsla(0, 0%, 100%, 0.274);
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 16px;
+}
+
+.card-img{
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  display: inline-block;
+  padding: .2rem 3rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+
+.card svg{
+  width: 40px;
+}
+
+.card:first-of-type{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+.card:last-of-type{
+  position: absolute;
+  right: 20rem;
+  top: 20rem;
+}
+
+.line-one{
+  position: absolute;
+  top: 12.2rem;
+  transform: translateX(-5rem);
+  right: 0;
+}
+
+.line-two{
+  position: absolute;
+  transform: translateX(-1.2rem);
+  right: 0;
+}
