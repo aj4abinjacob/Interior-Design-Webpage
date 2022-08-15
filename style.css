@@ -64,8 +64,8 @@ img {
 
 
 body{
-    background:url('./images/backg.png');
-    background-repeat: 0;
+    background:url('/backg.png');
+    background-repeat: no-repeat;
     background-size: cover;
     color: white;
     font-family: Montserrat;
@@ -214,4 +214,31 @@ h1{
   position: absolute;
   transform: translateX(-1.2rem);
   right: 0;
+}
+
+
+@media screen and (max-width:600px){
+
+
+  nav ul{
+    display: none;
+  }
+
+ 
+  .nav-buttons{
+    border-bottom: transparent;
+  }
+  
+
+  h1{
+    font-size: 2rem;
+  }
+
+  [height="210"]{
+    display: none;
+  }
+
+  .card{
+    display: none;
+  }
 }
